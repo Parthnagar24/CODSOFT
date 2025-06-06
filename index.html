@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechSutra | Empowering Digital Innovation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Tech<span>Sutra</span></div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="cta-btn">Get Started</a>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Innovate with TechSutra</h1>
+        <p>Your trusted partner for cutting-edge digital transformation.</p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn primary">Explore Services</a>
+          <a href="#contact" class="btn secondary">Book a Call</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>🚀 Agile Development</h3>
+        <p>Fast, flexible, and scalable development cycles for modern businesses.</p>
+      </div>
+      <div class="feature">
+        <h3>💡 AI-Driven Insights</h3>
+        <p>Leverage data to make smart, future-ready decisions with AI integration.</p>
+      </div>
+      <div class="feature">
+        <h3>🌐 Web & App Solutions</h3>
+        <p>Build beautiful, responsive, and user-first digital experiences.</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About TechSutra</h2>
+      <p>
+        TechSutra blends Indian innovation with global tech to deliver bespoke
+        digital solutions. With a team of passionate engineers, we believe in
+        creating software that empowers and inspires.
+      </p>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service">
+          <h4>Custom Software</h4>
+          <p>Tailored systems to meet your unique business needs.</p>
+        </div>
+        <div class="service">
+          <h4>Cloud Solutions</h4>
+          <p>Secure, scalable, and reliable cloud infrastructure setup.</p>
+        </div>
+        <div class="service">
+          <h4>UI/UX Design</h4>
+          <p>Crafting intuitive and engaging user interfaces.</p>
+        </div>
+        <div class="service">
+          <h4>AI & Automation</h4>
+          <p>Streamline operations with machine learning and automation tools.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-members">
+        <div class="member">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="Team Member"
+          />
+          <h4>Arjun Mehta</h4>
+          <p>CEO & Founder</p>
+        </div>
+        <div class="member">
+          <img
+            src="https://randomuser.me/api/portraits/women/45.jpg"
+            alt="Team Member"
+          />
+          <h4>Priya Sharma</h4>
+          <p>Lead Designer</p>
+        </div>
+        <div class="member">
+          <img
+            src="https://randomuser.me/api/portraits/men/65.jpg"
+            alt="Team Member"
+          />
+          <h4>Rohit Sen</h4>
+          <p>Head of AI</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-list">
+        <div class="testimonial">
+          <p>
+            "TechSutra transformed our digital strategy with their agile
+            development. Highly recommended!"
+          </p>
+          <h4>— Neha Gupta, CEO, Innovatech</h4>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Their AI-driven insights helped us make smarter business decisions
+            quickly and confidently."
+          </p>
+          <h4>— Ramesh Kumar, CTO, DataWorks</h4>
+        </div>
+        <div class="testimonial">
+          <p>
+            "The team is talented, responsive, and delivered a stunning UI/UX
+            design for our app."
+          </p>
+          <h4>— Sanya Patel, Product Manager, Appfinity</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Get in Touch</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="social-links">
+        <a
+          href="https://linkedin.com/company/techsutra"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/24/174/174857.png"
+            alt="LinkedIn"
+        /></a>
+        <a
+          href="https://twitter.com/techsutra"
+          target="_blank"
+          aria-label="Twitter"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/24/733/733579.png"
+            alt="Twitter"
+        /></a>
+        <a
+          href="https://facebook.com/techsutra"
+          target="_blank"
+          aria-label="Facebook"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/24/733/733547.png"
+            alt="Facebook"
+        /></a>
+      </div>
+      <p>&copy; 2025 TechSutra. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const form = document.querySelector('form');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent page refresh
+
+        alert('Message sent! Thank you for getting in touch.');
+
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
