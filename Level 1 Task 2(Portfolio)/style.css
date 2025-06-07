@@ -1,213 +1,205 @@
-body {
-  background: #1e40af; /* deep blue */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #e0e7ff;
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body and background */
+body {
+  background-color: #1e40af; /* Blue background */
+  color: #e0e7ff; /* Light text for contrast */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for the main content */
+main {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 2rem auto;
   padding: 0 1rem;
 }
 
+/* Header styles */
 header {
-  padding: 1.5rem 0;
+  background-color: #2563eb; /* slightly lighter blue */
+  padding: 1.5rem 1rem;
   text-align: center;
-  border-bottom: 2px solid #3b82f6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
 }
 
 header h1 {
-  font-weight: 600;
-  margin-bottom: 0.3rem;
   font-size: 2.8rem;
-}
-
-.tagline {
-  font-weight: 400;
-  font-size: 1rem;
-  color: #93c5fd;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  background-color: #2563eb;
-  padding: 0.8rem 0;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-}
-
-nav a {
+  font-weight: 900;
+  margin-bottom: 0.25rem;
   color: #e0e7ff;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #dbeafe;
+}
+
+header nav a {
+  color: #dbeafe;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 10px;
   transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #bfdbfe;
-}
-
-main h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.about-wrap {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  max-width: 850px;
-  margin: 0 auto 3rem auto;
-  padding: 0 1rem;
-}
-
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #60a5fa;
-  box-shadow: 0 2px 8px rgba(96, 165, 250, 0.4);
-}
-
-.about-wrap p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #dbeafe;
-  max-width: 600px;
-}
-
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto 3rem auto;
-  padding: 0 1rem;
-}
-
-.skills-list h3 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+header nav a:hover,
+header nav a:focus {
   color: #93c5fd;
 }
 
-.skills-list ul {
-  list-style-type: square;
-  padding-left: 1.2rem;
-  color: #dbeafe;
+/* Section headings */
+h2 {
+  color: #bfdbfe;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 0.3rem;
+}
+
+/* Section paragraphs */
+section p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #e0e7ff;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
   font-size: 1rem;
-  line-height: 1.5;
-}
-
-#certs ul {
-  max-width: 700px;
-  margin: 0 auto 3rem auto;
-  padding-left: 1.2rem;
-  color: #dbeafe;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-.project {
-  max-width: 700px;
-  background-color: #2563ebcc;
-  padding: 1.2rem 1.5rem;
-  border-radius: 8px;
-  margin: 0 auto 1.5rem auto;
-  box-shadow: 0 0 8px #2563ebaa;
-  transition: background-color 0.3s ease;
-}
-
-.project:hover {
-  background-color: #3b82f6cc;
-}
-
-.project h3 {
-  margin-top: 0;
-  color: #dbeafe;
-}
-
-.project p {
-  margin: 0.5rem 0 1rem 0;
   color: #cbd5e1;
 }
 
-.project a, .cert-btn {
-  color: #93c5fd;
-  text-decoration: none;
-  font-weight: 500;
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
-  font-family: inherit;
-  font-size: 1rem;
+/* Images */
+section#about img {
+  border-radius: 50%;
+  border: 3px solid #3b82f6;
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.project a:hover, .cert-btn:hover {
+/* Buttons */
+button {
+  background-color: #3b82f6;
+  border: none;
+  color: #e0e7ff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+button:hover,
+button:focus {
+  background-color: #60a5fa;
+}
+
+/* Links inside projects and contact */
+a {
+  color: #60a5fa;
   text-decoration: underline;
 }
 
-#contact {
+a:hover,
+a:focus {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+/* Projects articles */
+section#projects article {
+  background-color: #1e3a8a;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Resume section */
+#resume {
   max-width: 700px;
   margin: 0 auto 3rem auto;
   padding: 0 1rem;
   text-align: center;
 }
 
-#contact p {
-  font-size: 1.1rem;
-  margin: 0.6rem 0;
-  color: #dbeafe;
-}
-
-#contact a {
-  color: #93c5fd;
+#resume a.resume-link {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #e0e7ff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
-#contact a:hover {
-  text-decoration: underline;
+#resume a.resume-link:hover {
+  background-color: #3b82f6;
 }
 
+/* Footer */
 footer {
+  background-color: #2563eb;
+  color: #dbeafe;
   text-align: center;
-  margin-top: 2em;
+  padding: 1rem 0;
+  border-radius: 10px 10px 0 0;
+  font-size: 0.9rem;
+  margin-top: auto;
 }
 
-/* Popup styles */
-#popup-overlay {
+/* Certificate modal */
+#certModal {
   display: none;
   position: fixed;
   top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999;
 }
 
-#popup-overlay.active {
-  display: flex;
-}
-
-#popup-image {
-  max-width: 90vw;
-  max-height: 80vh;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #93c5fd;
-}
-
-#popup-close {
+#certModal span {
   position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 2.5rem;
-  color: #93c5fd;
+  top: 20px; right: 30px;
+  font-size: 30px;
+  color: white;
   cursor: pointer;
-  font-weight: bold;
-  user-select: none;
+}
+
+#certModal img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  box-shadow: 0 0 15px white;
+  border-radius: 10px;
 }
