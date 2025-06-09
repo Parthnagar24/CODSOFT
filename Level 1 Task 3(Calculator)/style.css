@@ -13,7 +13,7 @@ body {
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  width: 300px;
+  width: 320px;
 }
 
 .display {
@@ -52,7 +52,7 @@ button:hover {
 
 .equal {
   background-color: #28a745;
-  grid-row: span 2;
+  grid-column: span 2;
 }
 
 .equal:hover {
@@ -61,4 +61,12 @@ button:hover {
 
 .zero {
   grid-column: span 2;
+}
+
+button[data-func] {
+  background-color: #6c63ff;
+}
+
+button[data-func]:hover {
+  background-color: #594fd1;
 }
