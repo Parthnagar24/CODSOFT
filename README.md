@@ -7,15 +7,15 @@ This repository contains the web development projects completed as part of the *
 ---------
 🚀 Level 1 Task 1: Landing Page Development
 Developed a responsive and visually structured landing page using HTML and CSS, focusing on semantic structure, clean layout, and user-friendly design. Strengthened foundational frontend skills and design principles.
-🔗 https://lnkd.in/g5rcRxqa
+🔗 (https://parthnagar24.github.io/CODSOFT/Level%201%20Task%201%20%28Landing%20Page%29/)
 
 🚀 Level 1 Task 2: Personal Portfolio Development
 Created a responsive portfolio website showcasing my skills, projects, and contact information using HTML and CSS. Applied design fundamentals to build a polished, professional web presence.
-🔗 https://lnkd.in/gpbXEqvm
+🔗 https://parthnagar24.github.io/CODSOFT/Level%201%20Task%202(Portfolio)/
 
 🚀 Level 1 Task 3: Basic Calculator Project
 Built a fully functional calculator with HTML, CSS Grid, and JavaScript, featuring interactive inputs, all basic arithmetic operations, and clean UI design using event handling and logical operations.
-🔗  https://lnkd.in/gqt4Z25j
+🔗  https://parthnagar24.github.io/CODSOFT/Level%201%20Task%203(Calculator)/
 
 ### Technologies Used
 - HTML5, CSS3, JavaScript (ES6)
