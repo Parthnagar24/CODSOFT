@@ -17,9 +17,33 @@ Created a responsive portfolio website showcasing my skills, projects, and conta
 Built a fully functional calculator with HTML, CSS Grid, and JavaScript, featuring interactive inputs, all basic arithmetic operations, and clean UI design using event handling and logical operations.
 🔗  https://lnkd.in/gqt4Z25j
 
+### Technologies Used
+- HTML5, CSS3, JavaScript (ES6)
+- CSS Grid & Flexbox
+- Responsive Web Design (Mobile-First)
+- Git & GitHub
+
+---
+
+### What I Learned
+- Responsive layouts and semantic HTML structure
+- JavaScript event handling and DOM manipulation
+- CSS Grid for advanced layout design
+- Writing clean, maintainable code
+
+---
+
+### How to Run Locally
+1. Clone the repository:
+git clone https://github.com/Parthnagar24/CODSOFT.git 
+
+2.Open project files in a code editor.
+
+3.Use Live Server --> https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer  or open HTML files directly in a browser.
+
 
 📬 Contact
 -
 📧 Email: parthnagar2406@gmail.com
 💼 LinkedIn: www.linkedin.com/in/parth-nagar-66b674278
-🌐 GitHub:
+🌐 GitHub:https://github.com/Parthnagar24
